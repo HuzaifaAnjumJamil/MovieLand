@@ -3,7 +3,8 @@ import {useEffect, useState} from "react";
  import SearchIcon from './search.svg';
  import MovieCard from './MovieCard';
 
-const API_URL = "http://www.omdbapi.com?apikey=ec3cb0c1";
+const API_URL = process.env.REACT_APP_API_URL;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const movie1 = {
     "Title": "The Batman",
