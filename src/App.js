@@ -4,15 +4,15 @@ import {useEffect, useState} from "react";
  import MovieCard from './MovieCard';
 
 const API_URL = process.env.REACT_APP_API_URL;
-const API_KEY = process.env.REACT_APP_API_KEY;
 
-const movie1 = {
-    "Title": "The Batman",
-    "Year": "2022",
-    "imdbID": "tt1877830",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_SX300.jpg"
-}
+
+// const movie1 = {
+//     "Title": "The Batman",
+//     "Year": "2022",
+//     "imdbID": "tt1877830",
+//     "Type": "movie",
+//     "Poster": "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_SX300.jpg"
+// }
 
 const App = () => {
     const [movies, setMovies] = useState([]);
